@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Explore Colleges |College Shiksha</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Themesdesign" />
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!--Material Icon -->
+    <link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/fontawesome.css" />
+
+    <!-- selectize css -->
+    <link rel="stylesheet" type="text/css" href="css/selectize.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/nice-select.css" />
+
+    <!-- Custom  Css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Loader -->
+
+    <!-- Navigation Bar-->
+    <header id="topnav" class="defaultscroll scroll-active">
+        <!-- Tagline STart -->
+        <div class="tagline">
+            <div class="container">
+                <div class="float-left">
+                    <div class="phone">
+                        <i class="mdi mdi-phone-classic"></i> +91-9973945754
+                    </div>
+                    <div class="email">
+                        <a href="#">
+                            <i class="mdi mdi-email"></i> info@collegeshiksha.co.in
+                        </a>
+                    </div>
+                </div>
+                <div class="float-right">
+                    <ul class="topbar-list list-unstyled d-flex" style="margin: 11px 0px;">
+                        <li class="list-inline-item"><a href="javascript:void(0);"><i class="mdi mdi-account mr-2"></i>Guest</a></li>
+                        <li class="list-inline-item">
+                            <select id="select-lang" class="demo-default">
+                                <option value="">Language</option>
+                                <option value="4">English</option>
+                                <option value="5">Hindi</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!-- Tagline End -->
+
+        <!-- Menu Start -->
+        <div class="container">
+            <!-- Logo container-->
+            <div>
+                <a href="index.html" class="logo">
+                    <img src="images/logo-light.png" alt="" class="logo-light" height="60"  />
+                    <img src="images/logo-dark.png" alt="" class="logo-dark" height="68" />
+                </a>
+            </div>                 
+            <div class="buy-button">
+                <a href="post-a-job.html" class="btn btn-primary"><i class="mdi mdi-cloud-upload"></i> Apply Now </a>
+            </div><!--end login button-->
+            <!-- End Logo container-->
+            <div class="menu-extras">
+                <div class="menu-item">
+                    <!-- Mobile menu toggle-->
+                    <a class="navbar-toggle">
+                        <div class="lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                    <!-- End mobile menu toggle-->
+                </div>
+            </div>
+    
+            <div id="navigation">
+                <!-- Navigation Menu-->   
+                <ul class="navigation-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li >
+                        <a href="about.html">About Us</a>                        
+                    </li>
+                    <li><a href="college.html">Explore Colleges</a></li>
+                    <li><a href="exam.html">Exams</a></li>
+    
+                    
+                    
+                    <li>
+                        <a href="contact.html">contact</a>
+                    </li>
+                </ul><!--end navigation menu-->
+            </div><!--end navigation-->
+        </div><!--end container-->
+        <!--end end-->
+    </header><!--end header-->
+    <!-- Navbar End -->
+    
+    <!-- Start home -->
+    <section class="bg-half page-next-level" style="background: url('images/bg3.jpg') center center;"> 
+        <div class="bg-overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="text-center text-white">
+                        <h4 class="text-uppercase title mb-4">Explore the Colleges</h4>
+                        <ul class="page-next d-inline-block mb-0">
+                            <li><a href="index.html" class="text-uppercase font-weight-bold">Home</a></li>
+                        
+                            <li>
+                                <span class="text-uppercase text-white font-weight-bold">College Listing</span> 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end home -->
+
+    <div class="container">
+        <div class="home-form-position">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="home-registration-form job-list-reg-form bg-light shadow p-4 mb-3">
+                        <form class="registration-form">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="registration-form-box">
+                                        <i class="fa fa-briefcase"></i>
+                                        <input type="text" id="exampleInputName1" class="form-control rounded registration-input-box" placeholder="Search College's...">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="registration-form-box">
+                                        <i class="fa fa-location-arrow"></i>
+                                        <select id="select-country" class="demo-default">
+                                                        <option value="">Location</option>
+                                                        <option value="AP">Andhra Pradesh</option>
+                                                        <option value="AX">Arunachal Pradesh</option>
+                                                        <option value="AL">Assam</option>
+                                                        <option value="DZ">Bihar</option>
+                                                        <option value="AS">Chhatishgarh</option>
+                                                        <option value="AD">Goa</option>
+                                                        <option value="AO">Gujrat</option>
+                                                        <option value="AI">Haryana</option>
+                                                        <option value="AQ">Himachal Pradesh</option>
+                                                        <option value="AG">Jharkhand</option>
+                                                        <option value="AR">Karnataka</option>
+                                                        <option value="AM">Kerla</option>
+                                                        <option value="AW">Madhya Pradesh</option>
+                                                        <option value="AU">Maharastra</option>
+                                                        <option value="AT">Manipur</option>
+                                                        <option value="AZ">Meghalaya</option>
+                                                        <option value="BS">Nagaland</option>
+                                                        <option value="BH">Odisha</option>
+                                                        <option value="BD">Punjab</option>
+                                                        <option value="BB">Rajesthan</option>
+                                                        <option value="BY">Sikkim</option>
+                                                        <option value="BE">Tamil Nadu</option>
+                                                        <option value="BZ">Telangana</option>
+                                                        <option value="BJ">Tripura</option>
+                                                        <option value="BM">Uttar Pradesh</option>
+                                                        <option value="BT">Uttara Khand</option>
+                                                        <option value="BO">West Bengal</option>
+                                                    </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-6">
+                                                <div class="registration-form-box">
+                                                    <i class="fa fa-list-alt"></i>
+                                                    <select id="select-category" class="demo-default">
+                                                        <option value="">Categories...</option>
+                                                        <option value="2">Top Universities</option>
+                                                        <option value="1">B-Schools</option>
+                                                        <option value="3">Medical College</option>
+                                                        <option value="4">----------------------</option>
+                                                        <option value="5">Engineering</option>
+                                                        <option value="6">Management</option>
+                                                        <option value="7">LAW</option>
+                                                        <option value="8">Medical</option>
+                                                        <option value="9">Architecture</option>
+                                                        <option value="10">Pharmacy</option>
+                                                        <option value="11">Nurshing</option>
+                                                        <option value="12">Design</option>
+                                                        <option value="13">Allied Science</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="registration-form-box">
+                                        <input type="submit" id="submit" name="send" class="submitBnt btn btn-primary btn-block" value="Submit">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JOB LIST START -->
+    <section class="section pt-0">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="section-title text-center mb-4 pb-2">
+                        <h4 class="title title-line pb-5">Top Colleges of India</h4>
+                        <p class="text-muted para-desc mx-auto mb-1"> We'll quickly match you with the right choice.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="left-sidebar">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card rounded mt-4">
+                                <a data-toggle="collapse" href="#collapseOne" class="job-list" aria-expanded="true" aria-controls="collapseOne">
+                                    <div class="card-header" id="headingOne">
+                                        <h6 class="mb-0 text-dark f-18">State</h6>
+                                    </div>
+                                </a>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
+                                    
+                                    <div class="card-body p-0">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted" for="customRadio1">Tamil Nadu</label>
+                                        </div>
+
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted" for="customRadio2">Karnataka</label>
+                                        </div>
+
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted" for="customRadio3">Telangana</label>
+                                        </div>
+
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted" for="customRadio4">Odhisa</label>
+                                        </div>
+
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio5" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted" for="customRadio5">Maharastra</label>
+                                        </div>
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio5" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted" for="customRadio5">Maharastra</label>
+                                        </div>
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio5" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted" for="customRadio5">Kolkata</label>
+                                        </div>
+                                         <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio5" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted" for="customRadio5">Delhi/NCR</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- collapse one end -->
+                            <div class="card rounded mt-4">
+                                <a data-toggle="collapse" href="#collapsetwo" class="job-list" aria-expanded="true" aria-controls="collapsetwo">
+                                    <div class="card-header" id="headingtwo">
+                                        <h6 class="mb-0 text-dark f-18">Stream</h6>
+                                    </div>
+                                </a>
+                                <div id="collapsetwo" class="collapse show" aria-labelledby="headingtwo">
+                                    <div class="card-body p-0">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio7" name="customRadio1" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted f-15" for="customRadio7">Engineering</label>
+                                        </div>
+
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio8" name="customRadio1" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted f-15" for="customRadio8">Management </label>
+                                        </div>
+
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio9" name="customRadio1" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted f-15" for="customRadio9">LAW</label>
+                                        </div>
+
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio10" name="customRadio1" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted f-15" for="customRadio10">Medical</label>
+                                        </div>
+
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio11" name="customRadio1" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted f-15" for="customRadio11">Design</label>
+                                        </div>
+
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio12" name="customRadio1" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted f-15" for="customRadio12">Arts & Science </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- collapse one end -->
+                            <div class="card rounded mt-4">
+                                <a data-toggle="collapse" href="#collapsethree" class="job-list" aria-expanded="true" aria-controls="collapsethree">
+                                    <div class="card-header" id="headingthree">
+                                        <h6 class="mb-0 text-dark f-18">Insititute Type</h6>
+                                    </div>
+                                </a>
+                                <div id="collapsethree" class="collapse show" aria-labelledby="headingthree">
+                                    <div class="card-body p-0">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio13" name="customRadio2" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted f-15" for="customRadio13">Deemed University</label>
+                                        </div>
+
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio14" name="customRadio2" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted f-15" for="customRadio14">Private</label>
+                                        </div>
+
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio15" name="customRadio2" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted f-15" for="customRadio15">Government</label>
+                                        </div>
+
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio16" name="customRadio2" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted f-15" for="customRadio16">Public</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- collapse one end -->
+                            
+                            <!-- collapse one end -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-9 mt-4 pt-2">
+                    <!--<div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="show-results">
+                                <div class="float-left">
+                                    <h5 class="text-dark mb-0 pt-2 f-18">Showing results 0-20</h5>
+                                </div>
+                                <div class="sort-button float-right">
+                                    <select class="nice-select rounded">
+                                        <option data-display="Select">Nothing</option>
+                                        <option value="1">Web Developer</option>
+                                        <option value="2">PHP Developer</option>
+                                        <option value="3">Web Designer</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="job-list-box border rounded">
+                                <div class="p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-2">
+                                            <div class="company-logo-img">
+                                                <img src="images/featured-job/su.png" alt="" class="img-fluid mx-auto d-block">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-md-9">
+                                            <div class="job-list-desc">
+                                                <h6 class="mb-2"><a href="su.html" class="text-dark">Sathyabama Institute of Science and Technology</a></h6>
+                                                <p class="text-muted mb-0"><i class="mdi mdi-bank mr-2"></i>Sathyabama University</p>
+                                                <ul class="list-inline mb-0">
+                                                    <li class="list-inline-item mr-3">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-map-marker mr-2"></i>Chennai, Tamil Nadu</p>
+                                                    </li>
+
+                                                    <!--<li class="list-inline-item">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-clock-outline mr-2"></i>1 Minute ago</p>
+                                                    </li>-->
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3">
+                                            <div class="job-list-button-sm text-right">
+                                                <span class="badge badge-success">Admission-Open</span>
+
+                                                <div class="mt-3">
+                                                    <a href="su.html" class="btn btn-sm btn-primary">Apply</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-12 mt-4 pt-2">
+                            <div class="job-list-box border rounded">
+                                <div class="p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-2">
+                                            <div class="company-logo-img">
+                                                <img src="images/featured-job/hu.png" alt="" class="img-fluid mx-auto d-block">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-md-9">
+                                            <div class="job-list-desc">
+                                                <h6 class="mb-2"><a href="hu.html" class="text-dark">Hindustan Institute of Technology & Science </a></h6>
+                                                <p class="text-muted mb-0"><i class="mdi mdi-bank mr-2"></i>Hindustan University</p>
+                                                <ul class="list-inline mb-0">
+                                                    <li class="list-inline-item mr-3">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-map-marker mr-2"></i>Chennai, Tamil Nadu</p>
+                                                    </li>
+
+                                                   <!-- <li class="list-inline-item">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-clock-outline mr-2"></i></p>
+                                                    </li>-->
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3">
+                                            <div class="job-list-button-sm text-right">
+                                               <span class="badge badge-success">Admission-Open</span>
+
+                                                <div class="mt-3">
+                                                    <a href="hu.html" class="btn btn-sm btn-primary">Apply</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-12 mt-4 pt-2">
+                            <div class="job-list-box border rounded">
+                                <div class="p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-2">
+                                            <div class="company-logo-img">
+                                                <img src="images/featured-job/nitte.jpeg" alt="" class="img-fluid mx-auto d-block">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-md-9">
+                                            <div class="job-list-desc">
+                                                <h6 class="mb-2"><a href="nitte.html" class="text-dark">Nitte Meenakshi Institute of Technology</a></h6>
+                                                <p class="text-muted mb-0"><i class="mdi mdi-bank mr-2"></i>Affiliated to Visvesvaraya Technological University</p>
+                                                <ul class="list-inline mb-0">
+                                                    <li class="list-inline-item mr-3">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-map-marker mr-2"></i>Bengaluru, Karnataka</p>
+                                                    </li>
+
+                                                    <!--<li class="list-inline-item">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-clock-outline mr-2"></i>5 Minute ago</p>
+                                                    </li>-->
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3">
+                                            <div class="job-list-button-sm text-right">
+                                                <span class="badge badge-success">Admission-Open</span>
+
+                                                <div class="mt-3">
+                                                    <a href="nitte.html" class="btn btn-sm btn-primary">Apply</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>     
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-12 mt-4 pt-2">
+                            <div class="job-list-box border rounded">
+                                <div class="p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-2">
+                                            <div class="company-logo-img">
+                                                <img src="images/featured-job/nh.png" alt="" class="img-fluid mx-auto d-block">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-md-9">
+                                            <div class="job-list-desc">
+                                                <h6 class="mb-2"><a href="nh.html" class="text-dark">New Horizon College of Engineering</a></h6>
+                                                <p class="text-muted mb-0"><i class="mdi mdi-bank mr-2"></i> Affiliated to Visvesvaraya Technological University </p>
+                                                <ul class="list-inline mb-0">
+                                                    <li class="list-inline-item mr-3">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-map-marker mr-2"></i>Bangalore, Karnataka</p>
+                                                    </li>
+
+                                                    <!--<li class="list-inline-item">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-clock-outline mr-2"></i>7 Minute ago</p>
+                                                    </li>-->
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3">
+                                            <div class="job-list-button-sm text-right">
+                                                <span class="badge badge-success">Admission-Open</span>
+
+                                                <div class="mt-3">
+                                                    <a href="nh.html" class="btn btn-sm btn-primary">Apply</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 mt-4 pt-2">
+                            <div class="job-list-box border rounded">
+                                <div class="p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-2">
+                                            <div class="company-logo-img">
+                                                <img src="images/featured-job/bms.png" alt="" class="img-fluid mx-auto d-block">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-md-9">
+                                            <div class="job-list-desc">
+                                                <h6 class="mb-2"><a href="bms.html" class="text-dark">BMS College of Engineering</a></h6>
+                                                <p class="text-muted mb-0"><i class="mdi mdi-bank mr-2"></i>Affiliated to Visvesvaraya Technological University</p>
+                                                <ul class="list-inline mb-0">
+                                                    <li class="list-inline-item mr-3">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-map-marker mr-2"></i>Bengaluru, Karnataka</p>
+                                                    </li>
+
+                                                    <!--<li class="list-inline-item">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-clock-outline mr-2"></i>8 Minute ago</p>
+                                                    </li>-->
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3">
+                                            <div class="job-list-button-sm text-right">
+                                                    <span class="badge badge-success">Admission-Open</span>
+
+                                                <div class="mt-3">
+                                                    <a href="bms.html" class="btn btn-sm btn-primary">Apply</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-12 mt-4 pt-2">
+                            <div class="job-list-box border rounded">
+                                <div class="p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-2">
+                                            <div class="company-logo-img">
+                                                <img src="images/featured-job/bit.png" alt="" class="img-fluid mx-auto d-block">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-md-9">
+                                            <div class="job-list-desc">
+                                                <h6 class="mb-2"><a href="bit.html" class="text-dark"></a>Bangalore Institute of Technology</h6>
+                                                <p class="text-muted mb-0"><i class="mdi mdi-bank mr-2"></i>Affiliated to the Visvesvaraya Technological University</p>
+                                                <ul class="list-inline mb-0">
+                                                    <li class="list-inline-item mr-3">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-map-marker mr-2"></i> Bangalore, Karnataka</p>
+                                                    </li>
+
+                                                    <!--<li class="list-inline-item">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-clock-outline mr-2"></i>10 Minute ago</p>
+                                                    </li>-->
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3">
+                                            <div class="job-list-button-sm text-right">
+                                                <span class="badge badge-success">Admission-Open</span>
+
+                                                <div class="mt-3">
+                                                    <a href="bit.html" class="btn btn-sm btn-primary">Apply</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-12 mt-4 pt-2">
+                            <div class="job-list-box border rounded">
+                                <div class="p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-2">
+                                            <div class="company-logo-img">
+                                                <img src="images/featured-job/ds.png" alt="" class="img-fluid mx-auto d-block">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-md-9">
+                                            <div class="job-list-desc">
+                                                <h6 class="mb-2"><a href="ds.html" class="text-dark">Dayananda Sagar College of Engineering</a></h6>
+                                                <p class="text-muted mb-0"><i class="mdi mdi-bank mr-2"></i>Affiliated to Visvesvaraya Technological University</p>
+                                                <ul class="list-inline mb-0">
+                                                    <li class="list-inline-item mr-3">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-map-marker mr-2"></i>Bengaluru, Karnataka</p>
+                                                    </li>
+
+                                                    <!--<li class="list-inline-item">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-clock-outline mr-2"></i>11 Minute ago</p>
+                                                    </li>-->
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3">
+                                            <div class="job-list-button-sm text-right">
+                                                <span class="badge badge-success">Admission-Open</span>
+
+                                                <div class="mt-3">
+                                                    <a href="ds.html" class="btn btn-sm btn-primary">Apply</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-12 mt-4 pt-2">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination job-pagination mb-0 justify-content-center">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                                            <i class="mdi mdi-chevron-double-left"></i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item "><a class="page-link" href="college.html">1</a></li>
+                                    <li class="page-item active"><a class="page-link" href="college page2.html">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="college page3.html">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="college page4.html">4</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">
+                                            <i class="mdi mdi-chevron-double-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- JOB LIST START -->
+
+    <!-- subscribe start -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-5">
+                    <div class="float-left position-relative notification-icon mr-2">
+                        <i class="mdi mdi-bell-outline text-primary"></i>
+                        <span class="badge badge-pill badge-danger">1</span>
+                    </div>
+                    <h5 class="mt-2 mb-0">Subcribe for Notification</h5>
+                </div>
+                <div class="col-lg-8 col-md-7 mt-4 mt-sm-0">
+                    <form>
+                        <div class="form-group mb-0">
+                            <div class="input-group mb-0">
+                                <input name="email" id="email" type="email" class="form-control" placeholder="Your email :" required="" aria-describedby="newssubscribebtn">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary submitBnt" type="submit" id="newssubscribebtn">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- subscribe end -->
+
+    <!-- footer start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                    <a href="javascript:void(0)"><img src="images/logo footer.png" height="140" alt=""></a>
+                    <p class="mt-4">At <strong>Collegeskhiksha.co.in</strong> We provide students a clear vision towards their goal.</p>
+                    <ul class="social-icon social list-inline mb-0">
+                        <li class="list-inline-item"><a href="#" class="rounded"><i class="mdi mdi-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="rounded"><i class="mdi mdi-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="rounded"><i class="mdi mdi-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="rounded"><i class="mdi mdi-google"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <p class="text-white mb-4 footer-list-title">College Shiksha</p>
+                    <ul class="list-unstyled footer-list">
+                        <li><a href="about.html" class="text-foot"><i class="mdi mdi-chevron-right"></i> About Us</a></li>
+                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right"></i> Media & Press</a></li>
+                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right"></i> Career</a></li>
+                      
+                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right"></i> Collabration</a></li>
+                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right"></i> Marketing</a></li>
+                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right"></i> CEOs </a></li>
+                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right"></i> Our Apps</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <p class="text-white mb-4 footer-list-title">Resources</p>
+                    <ul class="list-unstyled footer-list">
+                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right"></i> Support</a></li>
+                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right"></i> Privacy Policy</a></li>
+                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right"></i> Terms</a></li>
+                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right"></i> NEET Advisor </a></li>
+                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right"></i> Engineering</a></li>
+                        <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right"></i> F.A.Q.</a></li>
+                    </ul>
+                </div>
+            
+                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <p class="text-white mb-4 footer-list-title f-17">Business Hours</p>
+                    <ul class="list-unstyled text-foot mt-4 mb-0">
+                        <li>Monday - Friday : 9:00 to 17:00</li>
+                        <li class="mt-2">Saturday : 10:00 to 15:00</li>
+                        <li class="mt-2">Sunday : Day Off (Holiday)</li>
+                        <li class="mt-2">Call Us : +91-9973945754 </li>
+                        <li class="mt-2">Mail : Hello@collegeshiksha.co.in </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <hr>
+    <footer class="footer footer-bar">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="">
+                        <p class="mb-0">© 2019 -2020 College Shiksha. Design with <i class="mdi mdi-heart text-danger"></i> Made in India</p>
+                        <p class="mb-0">Collegeshikha.co.in is Owned & Maneged By Parma Technolohies Pvt. Ltd.</p>
+                    </div>
+                </div>
+            </div>
+        </div><!--end container-->
+    </footer><!--end footer-->
+    <!-- Footer End -->
+
+    <!-- Back to top -->
+    <a href="#" class="back-to-top rounded text-center" id="back-to-top"> 
+        <i class="mdi mdi-chevron-up d-block"> </i> 
+    </a>
+    <!-- Back to top -->
+
+    <!-- javascript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/plugins.js"></script>
+
+    <!-- selectize js -->
+    <script src="js/selectize.min.js"></script>
+
+    <script src="js/jquery.nice-select.min.js"></script>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
